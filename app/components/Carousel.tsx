@@ -4,10 +4,10 @@ import React from "react";
 
 export default function Carousel() {
   return (
-    <div className="container  text-white  prose-slate md:prose-lg lg:prose-2xl  mx-auto">
+    <div className="container     mx-auto">
       <div className="relative ">
         <Image
-          className="brightness-50"
+          className="brightness-50 aspect-square[2/1.5]"
           alt="hero"
           src="/hero3.jpg"
           width={1920}
@@ -15,7 +15,7 @@ export default function Carousel() {
         />
 
         <div className="  text-center   absolute top-0  w-full  h-full flex justify-center items-center  ">
-          <div className="  ">
+          <div className="  text-white prose-slate text-2xl  md:prose-lg lg:prose-2xl ">
             <h1>EASY STEPS </h1>
             <h1>TO HERO&apos;S ITEM </h1>
             <h1> PURCHASE</h1>

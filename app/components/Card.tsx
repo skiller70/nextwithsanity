@@ -4,10 +4,10 @@ import React from "react";
 
 export default function Card(props: any) {
   return (
-    <div>
+    <div className=" container mx-auto px-4">
       <div className="card   shadow-[0_0px_10px_red]	">
         <figure >
-          <Image className="aspect-[2/1.5] " src={`${props.img}`} alt="card1" width={650} height={650} />
+          <Image className=" md:aspect-[2/1.4] " src={`${props.img}`} alt="card1" width={650} height={650} />
         </figure>
         <div className="card-body">
           <h2 className="card-title">{props.titleany}</h2>
