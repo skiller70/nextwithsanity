@@ -17,7 +17,7 @@ export default function Carousel() {
         <div className="  text-center   absolute top-0  w-full  h-full flex justify-center items-center  ">
           <div className="  ">
             <h1>EASY STEPS </h1>
-            <h1>TO HERO'S ITEM </h1>
+            <h1>TO HERO&apos;s ITEM </h1>
             <h1> PURCHASE</h1>
        
           </div>
