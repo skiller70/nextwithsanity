@@ -21,10 +21,10 @@ export default async function Home() {
 console.log(data)
   return (
     <div className=" w-full h-auto">
-      <div className=" top-0  sticky z-40">
+     
         <Navbar />
            
-      </div>
+  
 
       <Carousel />
     

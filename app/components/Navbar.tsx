@@ -7,7 +7,7 @@ import React from "react";
 export default function Navbar() {
   return (
     <>
-      <div className="navbar bg-base-100 shadow-md ">
+      <div className="navbar bg-base-100 shadow-md top-0 sticky z-40">
         <div className="flex-1">
           <Link href="/" className="btn btn-ghost normal-case text-xl">
          Dota 2 Store 
