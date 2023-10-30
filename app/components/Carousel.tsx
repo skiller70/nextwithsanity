@@ -4,7 +4,7 @@ import React from "react";
 
 export default function Carousel() {
   return (
-    <div className="container  px-4 mx-auto">
+    <div className="">
       <div className="relative ">
         <Image
           className="brightness-50 aspect-square[2/1.5]"
