@@ -18,7 +18,6 @@ export default async function Home() {
 
   const data = await client.fetch(query, {}, { cache: "no-store" });
 
-console.log(data)
   return (
     <div className=" w-full h-auto">
      
