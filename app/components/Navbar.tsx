@@ -5,6 +5,8 @@ import Link from "next/link";
 import React from "react";
 
 export default function Navbar() {
+ 
+
   return (
     <>
       <div className="navbar bg-base-100 shadow-md top-0 sticky z-40">
@@ -53,6 +55,7 @@ export default function Navbar() {
           </div>
         </div>
       </div>
+    
     </>
   );
 }

@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 
+
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
@@ -17,7 +18,8 @@ export default function RootLayout({
   return (
     <html data-theme="forest" lang="en">
       <meta name="google-site-verification" content="HiU8hwLO8ZCeDDv0lUP9zB2sgH-vZ4QX4oi2BAC72gs" />
-      <body className={inter.className}>{children}</body>
+
+      <body className={inter.className}> {children}</body>
     </html>
   )
 }
