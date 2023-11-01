@@ -4,7 +4,6 @@ import Carousel from "./components/Carousel";
 import Card from "./components/Card";
 import { client } from "@/src/utils/sanityClientConfig";
 
-
 // interface PortableText {
 //   _type: 'array';
 //   _key: string;
@@ -23,7 +22,7 @@ export default async function Home() {
         <Carousel />
 
         <div className=" container grid grid-cols-1 sm:max-md:grid-cols-2 lg:grid-cols-3 gap-12 mx-auto">
-          {data.map((val) => (
+          {data.map((val: any) => (
             <div key={val._id}>
               {
                 <Card
