@@ -1,5 +1,14 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export const GET = async (req: Request, res: Response) => {
-  return NextResponse.json({ name: "skiller" });
+export const POST = async (req: Request, res: Response) => {
+ 
+ 
+ const data = req.body
+
+console.log(data)
+
+
+
+
+
 };
