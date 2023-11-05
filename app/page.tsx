@@ -1,8 +1,6 @@
-import Navbar from "../components/reuse/Navbar";
 import Carousel from "../components/reuse/Carousel";
 import Card from "../components/reuse/Card";
 import { client } from "@/src/utils/sanityClientConfig";
-
 
 // interface PortableText {
 //   _type: 'array';
@@ -35,7 +33,6 @@ export default async function Home() {
           ))}
         </div>
       </div>
-
     </>
   );
 }
