@@ -1,21 +1,15 @@
 "use client";
 
-import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-import { useSession, signIn, signOut } from "next-auth/react";
+import { useSession, signIn} from "next-auth/react";
 import { ModeToggle } from "@/components/reuse/ModeToggle";
-import { TypographyH1 } from "@/components/ui/TypographyH1";
-import { navigationMenuTriggerStyle } from "@/components/ui/navigation-menu";
-import { Button } from "@/components/ui/button";
-import { Input } from "../ui/input";
 
-import { InputIcon } from "@radix-ui/react-icons";
-import { DialogDemo } from "./DialogDemo";
+import { Button } from "@/components/ui/button";
+
 import { ProfileAvatar } from "./ProfileAvatar";
-import { CommandMenu } from "./CommandMenu";
+
 import { SeachItems } from "./SeachItems";
-import { CommandDialog } from "cmdk";
 
 export default function Navbar() {
   const { data: session, status } = useSession();
@@ -76,9 +70,9 @@ export default function Navbar() {
             {/* DIV SECOND PART */}
             <div className=" flex-auto justify-end flex items-center gap-x-4">
               {/* <CommandDialog/> */}
-          <div className=" w-[100%] md:w-64">
-          <SeachItems />
-          </div>
+              <div className=" w-[100%] md:w-64">
+                <SeachItems />
+              </div>
               {/* <Input/> */}
               <ModeToggle />
 
