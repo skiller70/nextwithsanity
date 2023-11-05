@@ -5,7 +5,7 @@ import { client } from "@/src/utils/sanityClientConfig";
 
 export default async function page() {
   const data = await client.fetch(`*[_type == "arcanas"]`,{},{cache:"no-store"})
-  console.log(data)
+
   return (  
     <div>
         <h1>sadasd</h1>

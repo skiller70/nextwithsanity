@@ -2,7 +2,7 @@ import Navbar from "../components/reuse/Navbar";
 import Carousel from "../components/reuse/Carousel";
 import Card from "../components/reuse/Card";
 import { client } from "@/src/utils/sanityClientConfig";
-import { TestCount } from "../components/reuse/TestCount";
+
 
 // interface PortableText {
 //   _type: 'array';
