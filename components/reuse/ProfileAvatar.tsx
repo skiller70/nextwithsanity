@@ -14,23 +14,23 @@ import {
 import Link from "next/link";
 import { useSession, signOut } from "next-auth/react";
 import Image from "next/image";
-import { Button } from "../ui/button";
-type Checked = DropdownMenuCheckboxItemProps["checked"];
 
-type myImage = {
-  image: string;
-};
+type Checked = DropdownMenuCheckboxItemProps["checked"];
 
 export function ProfileAvatar() {
   const { data: session } = useSession();
-  const src = session?.user?.image;
-  console.log();
+
   return (
     <DropdownMenu>
       <DropdownMenuTrigger>
         {" "}
         <Avatar>
-          <Image src={src} alt="@shadcn" width={100} height={100} />
+          <Image
+            src={`${session?.user?.image}`}
+            alt="profile"
+            width={100}
+            height={100}
+          />
 
           <AvatarFallback>CN</AvatarFallback>
         </Avatar>
@@ -44,16 +44,15 @@ export function ProfileAvatar() {
         <DropdownMenuItem>Subscription</DropdownMenuItem>
         <DropdownMenuItem>
           {session?.user ? (
-              <div
+            <div
               className=" cursor-pointer"
               onClick={() => {
-                signOut({callbackUrl:"/api/auth/signin"});
+                signOut({ callbackUrl: "/api/auth/signin" });
               }}
             >
               Logout
             </div>
           ) : (
-          
             <Link href="/api/auth/signin">Login</Link>
           )}
         </DropdownMenuItem>
