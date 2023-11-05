@@ -47,7 +47,7 @@ export function ProfileAvatar() {
               <div
               className=" cursor-pointer"
               onClick={() => {
-                signOut();
+                signOut({callbackUrl:"/api/auth/signin"});
               }}
             >
               Logout

@@ -1,4 +1,4 @@
-"use client";
+
 import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
@@ -59,27 +59,7 @@ export default function page() {
     //   </div>
     // </div>
     <div className=" flex justify-center items-center h-screen">
-      <Card className="w-[350px]">
-        <CardHeader>
-          <CardTitle>Card Title</CardTitle>
-          <CardDescription>Card Description</CardDescription>
-        </CardHeader>
-        <CardContent>
-          <p>Card Content</p>
-        </CardContent>
-        <CardFooter>
-          <p>Card Footer</p>
-        </CardFooter>
-        <Button
-        variant="default"
-          onClick={() => {
-            signIn("github", { callbackUrl: "/" });
-          }}
-          className="btn btn-wide btn-primary rounded-[8px] "
-        >
-          <FontAwesomeIcon icon={faGithub} size="xl" /> Sign in with Github
-        </Button>
-      </Card>
+      
     </div>
   );
 }
